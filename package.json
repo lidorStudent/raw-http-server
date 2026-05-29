@@ -1,0 +1,21 @@
+{
+  "name": "sprig",
+  "version": "1.0.0",
+  "description": "A small, expressive HTTP/1.1 framework built on the raw Node.js net module — no http, no dependencies.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node examples/server.js",
+    "demo": "node examples/server.js"
+  },
+  "keywords": [
+    "http",
+    "net",
+    "tcp",
+    "framework",
+    "router",
+    "from-scratch"
+  ],
+  "author": "",
+  "license": "MIT"
+}

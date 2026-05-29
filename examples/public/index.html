@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sprig · raw-TCP HTTP server</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <main>
+    <h1>🌿 Sprig</h1>
+    <p class="tagline">A small HTTP/1.1 framework built by hand on the Node.js <code>net</code> module.</p>
+
+    <section>
+      <h2>This page is static</h2>
+      <p>
+        The HTML, CSS, and the script below were streamed straight off disk by
+        Sprig's static handler — complete with correct MIME types,
+        <code>Last-Modified</code>/<code>ETag</code> validators, and byte-range
+        support. No <code>http</code> module was involved.
+      </p>
+    </section>
+
+    <section>
+      <h2>Live note API</h2>
+      <p>The list below is fetched from <code>/api/notes</code>, served by a route handler:</p>
+      <ul id="notes"><li>loading…</li></ul>
+      <form id="add-note">
+        <input id="title" placeholder="New note title" required />
+        <button type="submit">Add note</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>
